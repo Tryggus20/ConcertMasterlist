@@ -1,0 +1,44 @@
+[debug] [2024-02-14T17:58:22.879Z] ----------------------------------------------------------------------
+[debug] [2024-02-14T17:58:22.883Z] Command:       /usr/local/Cellar/node/21.6.1/bin/node /usr/local/bin/firebase serve
+[debug] [2024-02-14T17:58:22.884Z] CLI Version:   13.1.0
+[debug] [2024-02-14T17:58:22.884Z] Platform:      darwin
+[debug] [2024-02-14T17:58:22.884Z] Node Version:  v21.6.1
+[debug] [2024-02-14T17:58:22.884Z] Time:          Wed Feb 14 2024 11:58:22 GMT-0600 (Central Standard Time)
+[debug] [2024-02-14T17:58:22.885Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-14T17:58:22.888Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-02-14T17:58:22.980Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-14T17:58:22.980Z] > authorizing via signed-in user (dmcampbell2023@gmail.com)
+[debug] [2024-02-14T17:58:22.980Z] [iam] checking project concert-masterlist for permissions ["firebase.projects.get"]
+[debug] [2024-02-14T17:58:22.981Z] > refreshing access token with scopes: []
+[debug] [2024-02-14T17:58:22.982Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-14T17:58:22.982Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-14T17:58:23.079Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-02-14T17:58:23.079Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-02-14T17:58:23.142Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-14T17:58:23.142Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-14T17:58:23.191Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/concert-masterlist:testIamPermissions [none]
+[debug] [2024-02-14T17:58:23.191Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/concert-masterlist:testIamPermissions x-goog-quota-user=projects/concert-masterlist
+[debug] [2024-02-14T17:58:23.191Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/concert-masterlist:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-14T17:58:23.385Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/concert-masterlist:testIamPermissions 200
+[debug] [2024-02-14T17:58:23.386Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/concert-masterlist:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-14T17:58:23.387Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/concert-masterlist [none]
+[debug] [2024-02-14T17:58:23.590Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/concert-masterlist 200
+[debug] [2024-02-14T17:58:23.590Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/concert-masterlist {"projectId":"concert-masterlist","projectNumber":"218982907449","displayName":"Concert-Masterlist","name":"projects/concert-masterlist","resources":{"hostingSite":"concert-masterlist"},"state":"ACTIVE","etag":"1_cecd0381-2395-46d0-afc2-bdcbc58c40b8"}
+[info] 
+[info] === Serving from '/Users/user/Documents/ConcertMasterlist'...
+[info] 
+[debug] [2024-02-14T17:58:23.595Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/concert-masterlist/sites 
+[debug] [2024-02-14T17:58:24.117Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/concert-masterlist/sites 200
+[debug] [2024-02-14T17:58:24.118Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/concert-masterlist/sites {"sites":[{"name":"projects/concert-masterlist/sites/concert-masterlist","defaultUrl":"https://concert-masterlist.web.app","appId":"1:218982907449:web:6518dec02f2eba63b857e8","type":"DEFAULT_SITE"}]}
+[debug] [2024-02-14T17:58:24.118Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/concert-masterlist/webApps/1:218982907449:web:6518dec02f2eba63b857e8/config [none]
+[debug] [2024-02-14T17:58:24.365Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/concert-masterlist/webApps/1:218982907449:web:6518dec02f2eba63b857e8/config 200
+[debug] [2024-02-14T17:58:24.365Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/concert-masterlist/webApps/1:218982907449:web:6518dec02f2eba63b857e8/config {"projectId":"concert-masterlist","appId":"1:218982907449:web:6518dec02f2eba63b857e8","storageBucket":"concert-masterlist.appspot.com","apiKey":"AIzaSyD_JxAwfkbNwozUeXTE1T-8JYb0GmxYFPs","authDomain":"concert-masterlist.firebaseapp.com","messagingSenderId":"218982907449","measurementId":"G-T1WM2T2GGD"}
+[debug] [2024-02-14T17:58:24.390Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/concert-masterlist [none]
+[debug] [2024-02-14T17:58:24.491Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/concert-masterlist 200
+[debug] [2024-02-14T17:58:24.491Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/concert-masterlist {"projectId":"concert-masterlist","projectNumber":"218982907449","displayName":"Concert-Masterlist","name":"projects/concert-masterlist","resources":{"hostingSite":"concert-masterlist"},"state":"ACTIVE","etag":"1_cecd0381-2395-46d0-afc2-bdcbc58c40b8"}
+[info] i  hosting[concert-masterlist]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[concert-masterlist]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [14/Feb/2024:17:58:30 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Feb/2024:17:58:30 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15\""}}
+[info] i  hosting: ::1 - - [14/Feb/2024:17:58:30 +0000] "GET /favicon.ico HTTP/1.1" 304 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Feb/2024:17:58:30 +0000] \"GET /favicon.ico HTTP/1.1\" 304 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15\""}}
+[info] i  hosting: ::1 - - [14/Feb/2024:17:58:30 +0000] "GET /src/components/App/App.jsx HTTP/1.1" 404 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Feb/2024:17:58:30 +0000] \"GET /src/components/App/App.jsx HTTP/1.1\" 404 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15\""}}
