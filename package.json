@@ -1,12 +1,12 @@
 {
   "dependencies": {
-    "firebase": "^10.8.0",
     "axios": "^0.21.1",
     "bootstrap": "^5.3.2",
     "cloudinary": "^1.41.0",
     "cookie-session": "^2.0.0",
     "dotenv": "^16.3.1",
     "express": "^4.17.1",
+    "firebase": "^10.8.0",
     "fuse.js": "^6.6.2",
     "pg": "^8.5.1",
     "prop-types": "^15.7.2",
@@ -44,5 +44,4 @@
       "last 1 safari version"
     ]
   }
-  
 }

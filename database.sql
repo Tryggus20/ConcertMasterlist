@@ -78,7 +78,7 @@ CREATE TABLE
         met_where VARCHAR(150)
     );
 
--- FRIEND REQUEST table to keep Friends table clener
+-- FRIEND REQUEST table to keep Friends table cleaner
 -- will need CRONJOB to clean this table out
 -- Status will be accepted/pending/declined
 CREATE TABLE
